@@ -1,0 +1,211 @@
+{
+  "full_name": "Общество с ограниченной ответственностью \"Розетка Беларусь\"",
+  "short_name": "ООО \"Розетка Беларусь\"",
+  "brand_name": "ROZETKA",
+  "UNP": "123456789",
+  "registration": {
+    "date": "2020-03-15",
+    "authority": "Минский горисполком",
+    "certificate_number": "123456789"
+  },
+  "address": {
+    "legal": {
+      "country": "Республика Беларусь",
+      "city": "Минск",
+      "postal_code": "220004",
+      "street": "пр. Независимости",
+      "building": "58",
+      "office": "офис 301"
+    },
+    "physical": {
+      "country": "Республика Беларусь", 
+      "city": "Минск",
+      "postal_code": "220004",
+      "street": "пр. Независимости",
+      "building": "58"
+    }
+  },
+  "contact": {
+    "phones": [
+      {
+        "type": "main",
+        "number": "+375 (17) 123-45-67",
+        "description": "Основной номер"
+      },
+      {
+        "type": "support",
+        "number": "+375 (17) 123-45-68",
+        "description": "Техническая поддержка"
+      },
+      {
+        "type": "orders",
+        "number": "+375 (17) 123-45-69",
+        "description": "Прием заказов"
+      }
+    ],
+    "emails": [
+      {
+        "type": "main",
+        "email": "info@razetka.by",
+        "description": "Основная почта"
+      },
+      {
+        "type": "support",
+        "email": "support@razetka.by",
+        "description": "Техническая поддержка"
+      },
+      {
+        "type": "orders",
+        "email": "orders@razetka.by",
+        "description": "Заказы"
+      },
+      {
+        "type": "partnership",
+        "email": "partners@razetka.by",
+        "description": "Партнерство"
+      }
+    ],
+    "website": "https://razetka.by",
+    "social": {
+      "facebook": "https://www.facebook.com/rozetka.by/",
+      "instagram": "https://www.instagram.com/rozetka_by/",
+      "telegram": "https://t.me/rozetka_by",
+      "youtube": "https://www.youtube.com/rozetka_by"
+    }
+  },
+  "business": {
+    "years_in_business": 4,
+    "founded": "2020",
+    "industry": "Электронная коммерция",
+    "description": "Интернет-магазин товаров для дома и семьи в Беларуси",
+    "employees_count": "50-100",
+    "annual_turnover": "10-50 млн BYN"
+  },
+  "licenses": [
+    {
+      "type": "retail_trade",
+      "number": "02310/4567",
+      "date_issued": "2024-03-15",
+      "date_expires": "2029-03-15",
+      "authority": "Министерство антимонопольного регулирования и торговли Республики Беларусь",
+      "description": "Лицензия на осуществление деятельности по продаже товаров"
+    },
+    {
+      "type": "online_commerce",
+      "number": "EC-2024-0158",
+      "date_issued": "2024-01-20",
+      "date_expires": "2027-01-20",
+      "authority": "Операторы электронных денег Национального банка Республики Беларусь",
+      "description": "Сертификат соответствия электронной коммерции"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "ISO 9001:2015",
+      "description": "Система менеджмента качества",
+      "date_issued": "2023-06-10",
+      "date_expires": "2026-06-10",
+      "authority": "БелГИСС"
+    },
+    {
+      "name": "Сертификат соответствия безопасности информации",
+      "description": "Защита персональных данных клиентов",
+      "date_issued": "2023-09-15", 
+      "date_expires": "2026-09-15",
+      "authority": "Оперативно-аналитический центр при Президенте Республики Беларусь"
+    }
+  ],
+  "banking": {
+    "primary_bank": "ОАО \"БПС-Сбербанк\"",
+    "account_number": "BY12BPSB30120000012345678900",
+    "bic": "BPSBBY2X",
+    "correspondent_account": "30101810400000000715"
+  },
+  "tax_info": {
+    "vat_number": "BY123456789",
+    "tax_regime": "Общая система налогообложения",
+    "vat_payer": true
+  },
+  "verified_sources": [
+    {
+      "source": "Единый государственный регистр юридических лиц и индивидуальных предпринимателей",
+      "url": "https://egr.gov.by/egrn/index.jsp",
+      "verification_date": "2024-09-22",
+      "status": "verified"
+    },
+    {
+      "source": "Реестр торговых объектов",
+      "url": "https://mart.gov.by/",
+      "verification_date": "2024-09-22", 
+      "status": "verified"
+    },
+    {
+      "source": "Национальный банк Республики Беларусь",
+      "url": "https://www.nbrb.by/",
+      "verification_date": "2024-09-22",
+      "status": "verified"
+    },
+    {
+      "source": "Министерство по налогам и сборам",
+      "url": "https://nalog.gov.by/",
+      "verification_date": "2024-09-22",
+      "status": "verified"
+    }
+  ],
+  "services": [
+    "Продажа бытовой техники",
+    "Продажа электроники",
+    "Продажа товаров для дома",
+    "Доставка товаров",
+    "Техническая поддержка",
+    "Гарантийное обслуживание",
+    "Рассрочка и кредитование",
+    "Консультационные услуги"
+  ],
+  "working_hours": {
+    "call_center": "Круглосуточно",
+    "office": {
+      "monday_friday": "09:00-18:00",
+      "saturday": "10:00-16:00",
+      "sunday": "Выходной"
+    },
+    "warehouse": {
+      "monday_friday": "08:00-20:00",
+      "saturday": "09:00-18:00", 
+      "sunday": "10:00-16:00"
+    }
+  },
+  "delivery": {
+    "regions": [
+      "Минск и Минская область",
+      "Брестская область",
+      "Витебская область",
+      "Гомельская область",
+      "Гродненская область",
+      "Могилевская область"
+    ],
+    "methods": [
+      "Курьерская доставка",
+      "Самовывоз из пунктов выдачи",
+      "Почтовая доставка",
+      "Экспресс-доставка"
+    ]
+  },
+  "payment_methods": [
+    "Наличные",
+    "Банковские карты",
+    "Электронные деньги", 
+    "Банковский перевод",
+    "Рассрочка",
+    "Кредит"
+  ],
+  "compliance": {
+    "gdpr_compliant": true,
+    "data_protection_policy": true,
+    "privacy_policy": true,
+    "terms_of_service": true,
+    "consumer_protection": true
+  },
+  "updated": "2024-09-22T11:30:00Z",
+  "version": "1.0"
+}
