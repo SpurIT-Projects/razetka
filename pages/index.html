@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROZETKA - Интернет-магазин товаров для дома и семьи в Беларуси</title>
+    <meta name="description" content="ROZETKA - крупнейший интернет-магазин в Беларуси. Широкий ассортимент бытовой техники, электроники, товаров для дома. Быстрая доставка по всей стране.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="ROZETKA - Интернет-магазин товаров для дома и семьи в Беларуси">
+    <meta property="og:description" content="ROZETKA - крупнейший интернет-магазин в Беларуси. Широкий ассортимент бытовой техники, электроники, товаров для дома.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://razetka.by/">
+    <meta property="og:image" content="../assets/images/og-image.jpg">
+    <meta property="og:locale" content="ru_BY">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    
+    <!-- External Libraries -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- JSON-LD LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "ROZETKA",
+        "description": "Интернет-магазин товаров для дома и семьи",
+        "url": "https://razetka.by/",
+        "telephone": "+375 (17) 123-45-67",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "пр. Независимости, 58",
+            "addressLocality": "Минск",
+            "postalCode": "220004",
+            "addressCountry": "BY"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 53.9006,
+            "longitude": 27.5590
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "sameAs": [
+            "https://www.instagram.com/rozetka_by/",
+            "https://www.facebook.com/rozetka.by/",
+            "https://t.me/rozetka_by"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Наверх">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Минск</span>
+                </div>
+                <nav class="header-nav">
+                    <a href="#about">О нас</a>
+                    <a href="#reviews">Отзывы</a>
+                    <a href="#delivery">Доставка</a>
+                    <a href="#payment">Оплата</a>
+                    <a href="#contacts">Контакты</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="tel:+375171234567" class="header-phone">
+                        <i class="fas fa-phone"></i>
+                        +375 (17) 123-45-67
+                    </a>
+                </div>
+            </div>
+            
+            <div class="header-main">
+                <a href="/" class="logo">
+                    <img src="../assets/images/rozetka-logo.jpg" alt="ROZETKA">
+                    <span>ROZETKA</span>
+                </a>
+                
+                <div class="header-info">
+                    <div class="company-tagline">
+                        <h2>Товары для дома и семьи</h2>
+                        <p>Качество • Надежность • Сервис</p>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Открыть меню">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+            
+            <nav class="main-nav">
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="#categories">Наши категории</a></li>
+                        <li><a href="#features">Преимущества</a></li>
+                        <li><a href="#offers">Предложения</a></li>
+                        <li><a href="#payment-cards">Рассрочка</a></li>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobileNav">
+                <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+                <div class="mobile-nav-content">
+                    <div class="mobile-nav-header">
+                        <div class="logo">
+                            <img src="../assets/images/rozetka-logo.jpg" alt="ROZETKA">
+                            <span>ROZETKA</span>
+                        </div>
+                        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Закрыть меню">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="mobile-nav-body">
+                        <!-- Header Navigation Items -->
+                        <div class="mobile-nav-section">
+                            <h4>Основные разделы</h4>
+                            <ul class="mobile-nav-links">
+                                <li><a href="#about">О нас</a></li>
+                                <li><a href="#reviews">Отзывы</a></li>
+                                <li><a href="#delivery">Доставка</a></li>
+                                <li><a href="#payment">Оплата</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Main Navigation Items -->
+                        <div class="mobile-nav-section">
+                            <h4>Каталог и услуги</h4>
+                            <ul class="mobile-nav-links">
+                                <li><a href="#categories">Наши категории</a></li>
+                                <li><a href="#features">Преимущества</a></li>
+                                <li><a href="#offers">Предложения</a></li>
+                                <li><a href="#payment-cards">Рассрочка</a></li>
+                                <li><a href="#about">О компании</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Contact Info -->
+                        <div class="mobile-nav-section">
+                            <h4>Связь с нами</h4>
+                            <div class="mobile-nav-contact">
+                                <a href="tel:+375171234567" class="contact-phone">
+                                    <i class="fas fa-phone"></i>
+                                    +375 (17) 123-45-67
+                                </a>
+                                <div class="contact-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Минск</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <div class="container">
+                <div class="banner-slider">
+                    <div class="banner-slide active">
+                        <div class="banner-content">
+                            <h1>Скидки до 50% на бытовую технику</h1>
+                            <p>Большой выбор качественной техники для дома по выгодным ценам</p>
+                        </div>
+                        <div class="banner-image">
+                            <img src="../assets/images/banner-appliances.jpg" alt="Бытовая техника">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cost Calculation Form -->
+        <section class="cost-calculator">
+            <div class="container">
+                <div class="calculator-wrapper">
+                    <div class="calculator-background">
+                        <img src="https://page.gensparksite.com/v1/base64_upload/14feb53f0614506551fc012a57499bce" alt="Ремонтные работы" class="background-image">
+                        <div class="background-overlay"></div>
+                    </div>
+                    
+                    <div class="calculator-content">
+                        <div class="calculator-form-container">
+                            <div class="form-header">
+                                <h2>Хотите узнать стоимость ремонта?</h2>
+                                <p>Заполните форму и мы вам перезвоним!</p>
+                            </div>
+                            
+                            <form class="cost-form" id="costCalculatorForm">
+                                <div class="form-group">
+                                    <input 
+                                        type="text" 
+                                        id="clientName" 
+                                        name="name" 
+                                        placeholder="Как вас зовут?"
+                                        required
+                                        class="form-input"
+                                    >
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input 
+                                        type="tel" 
+                                        id="clientPhone" 
+                                        name="phone" 
+                                        placeholder="Ваш телефон"
+                                        required
+                                        class="form-input"
+                                    >
+                                </div>
+                                
+                                <button type="submit" class="submit-btn">
+                                    <span>Отправить</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+                            
+                            <div class="form-benefits">
+                                <div class="benefit-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>Перезвоним в течение 15 минут</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-calculator"></i>
+                                    <span>Бесплатный расчет стоимости</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Конфиденциальность гарантирована</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="calculator-info">
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <h3>Профессиональный ремонт</h3>
+                                <p>Выполняем все виды ремонтных работ с гарантией качества и в срок</p>
+                                <ul class="service-list">
+                                    <li><i class="fas fa-check"></i>Косметический ремонт</li>
+                                    <li><i class="fas fa-check"></i>Капитальный ремонт</li>
+                                    <li><i class="fas fa-check"></i>Дизайнерский ремонт</li>
+                                    <li><i class="fas fa-check"></i>Ремонт под ключ</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="info-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label">выполненных проектов</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">98%</div>
+                                    <div class="stat-label">довольных клиентов</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">5</div>
+                                    <div class="stat-label">лет на рынке</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Cards Section -->
+        <section id="payment-cards" class="payment-cards">
+            <div class="container">
+                <div class="payment-cards-content">
+                    <div class="payment-header">
+                        <h2>Удобная рассрочка для ремонта</h2>
+                        <p class="payment-subtitle">В нашем сервисе вы можете оплатить любой вид ремонта картами рассрочки.<br><strong>Ремонтируйте сейчас - платите потом!</strong></p>
+                    </div>
+                    
+                    <div class="cards-grid">
+                        <div class="card-item">
+                            <div class="card-header">
+                                <i class="fas fa-credit-card"></i>
+                                <h3>«Карта покупок»</h3>
+                            </div>
+                            <p class="bank-name">от Белгазпромбанка</p>
+                            <div class="term">
+                                <span class="term-value">2 месяца</span>
+                                <span class="term-label">рассрочки</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-item">
+                            <div class="card-header">
+                                <i class="fas fa-credit-card"></i>
+                                <h3>«Smart карта»</h3>
+                            </div>
+                            <p class="bank-name">от банка Москва-Минск</p>
+                            <div class="term">
+                                <span class="term-value">2 месяца</span>
+                                <span class="term-label">рассрочки</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-item">
+                            <div class="card-header">
+                                <i class="fas fa-credit-card"></i>
+                                <h3>«МАГНИТ»</h3>
+                            </div>
+                            <p class="bank-name">от Белорусбанка</p>
+                            <div class="term">
+                                <span class="term-value">3 месяца</span>
+                                <span class="term-label">рассрочки</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-item">
+                            <div class="card-header">
+                                <i class="fas fa-credit-card"></i>
+                                <h3>«Бархат»</h3>
+                            </div>
+                            <p class="bank-name">от Белорусбанка</p>
+                            <div class="term">
+                                <span class="term-value">3 месяца</span>
+                                <span class="term-label">рассрочки</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-item">
+                            <div class="card-header">
+                                <i class="fas fa-credit-card"></i>
+                                <h3>«Черепаха»</h3>
+                            </div>
+                            <p class="bank-name">от банка ВТБ</p>
+                            <div class="term">
+                                <span class="term-value">2 месяца</span>
+                                <span class="term-label">рассрочки</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-item">
+                            <div class="card-header">
+                                <i class="fas fa-credit-card"></i>
+                                <h3>«КартаFUN»</h3>
+                            </div>
+                            <p class="bank-name">от БПС-Сбербанка</p>
+                            <div class="term">
+                                <span class="term-value">2 месяца</span>
+                                <span class="term-label">рассрочки</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-item highlight">
+                            <div class="card-header">
+                                <i class="fas fa-credit-card"></i>
+                                <h3>«Халва»</h3>
+                            </div>
+                            <p class="bank-name">от МТБанка</p>
+                            <div class="term">
+                                <span class="term-value">3-6 месяцев</span>
+                                <span class="term-label">рассрочки</span>
+                            </div>
+                            <div class="card-badge">Лучший выбор</div>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-info">
+                        <div class="info-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Безопасные платежи</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-percentage"></i>
+                            <span>0% переплаты</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Быстрое оформление</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section id="categories" class="categories">
+            <div class="container">
+                <h2>Популярные категории</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <img src="../assets/images/category-smartphones.jpg" alt="Смартфоны">
+                        <h3>Смартфоны</h3>
+                        <p>От 299 BYN</p>
+                        <a href="#" class="btn btn-outline" data-disabled="true">Смотреть</a>
+                    </div>
+                    <div class="category-card">
+                        <img src="../assets/images/category-laptops.jpg" alt="Ноутбуки">
+                        <h3>Ноутбуки</h3>
+                        <p>От 899 BYN</p>
+                        <a href="#" class="btn btn-outline" data-disabled="true">Смотреть</a>
+                    </div>
+                    <div class="category-card">
+                        <img src="../assets/images/category-appliances.jpg" alt="Бытовая техника">
+                        <h3>Бытовая техника</h3>
+                        <p>От 89 BYN</p>
+                        <a href="#" class="btn btn-outline" data-disabled="true">Смотреть</a>
+                    </div>
+                    <div class="category-card">
+                        <img src="../assets/images/category-tv.jpg" alt="Телевизоры">
+                        <h3>Телевизоры</h3>
+                        <p>От 549 BYN</p>
+                        <a href="#" class="btn btn-outline" data-disabled="true">Смотреть</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Быстрая доставка</h3>
+                            <p>Доставка по Минску в день заказа</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Гарантия качества</h3>
+                            <p>Официальная гарантия на всю продукцию</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Удобная оплата</h3>
+                            <p>Наличными, картой или рассрочка</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Поддержка 24/7</h3>
+                            <p>Круглосуточная техническая поддержка</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Special Offers -->
+        <section id="offers" class="special-offers">
+            <div class="container">
+                <h2>Специальные предложения</h2>
+                <div class="offers-grid">
+                    <div class="offer-card">
+                        <div class="offer-badge">-30%</div>
+                        <img src="../assets/images/product-smartphone.jpg" alt="Смартфон Samsung Galaxy">
+                        <h3>Samsung Galaxy A54</h3>
+                        <div class="price">
+                            <span class="price-old">899 BYN</span>
+                            <span class="price-current">629 BYN</span>
+                        </div>
+                        <button class="btn btn-primary" data-disabled="true">Подробнее</button>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-badge">-25%</div>
+                        <img src="../assets/images/product-laptop.jpg" alt="Ноутбук ASUS">
+                        <h3>ASUS VivoBook 15</h3>
+                        <div class="price">
+                            <span class="price-old">1299 BYN</span>
+                            <span class="price-current">974 BYN</span>
+                        </div>
+                        <button class="btn btn-primary" data-disabled="true">Подробнее</button>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-badge">-40%</div>
+                        <img src="../assets/images/product-headphones.jpg" alt="Наушники Sony">
+                        <h3>Sony WH-CH720N</h3>
+                        <div class="price">
+                            <span class="price-old">249 BYN</span>
+                            <span class="price-current">149 BYN</span>
+                        </div>
+                        <button class="btn btn-primary" data-disabled="true">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Company -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>О компании ROZETKA</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Кто мы</h3>
+                        <p>ROZETKA — это современная компания, специализирующаяся на продаже качественных товаров для дома и семьи в Беларуси. Мы работаем с 2020 года и за это время завоевали доверие тысяч покупателей.</p>
+                        
+                        <h3>Наша миссия</h3>
+                        <p>Обеспечить каждую семью в Беларуси качественными товарами по доступным ценам, предоставляя превосходный сервис и надежную поддержку.</p>
+                        
+                        <h3>Наши ценности</h3>
+                        <ul>
+                            <li><strong>Качество</strong> — работаем только с проверенными брендами</li>
+                            <li><strong>Надежность</strong> — гарантируем безопасность каждой покупки</li>
+                            <li><strong>Сервис</strong> — обеспечиваем круглосуточную поддержку</li>
+                        </ul>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">года на рынке</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label">довольных клиентов</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">гарантия качества</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2>Отзывы клиентов</h2>
+                <p class="reviews-subtitle">Узнайте, что говорят наши довольные клиенты</p>
+                
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-details">
+                                    <h4>Анна Петрова</h4>
+                                    <span class="reviewer-position">Владелец магазина электроники</span>
+                                </div>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"Отличное качество обслуживания! Команда ROZETKA помогла нам увеличить продажи на 300% за полгода. Профессиональный подход и внимание к деталям впечатляют."</p>
+                        </div>
+                        <div class="review-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>15 ноября 2024</span>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-details">
+                                    <h4>Дмитрий Козлов</h4>
+                                    <span class="reviewer-position">ИТ-директор</span>
+                                </div>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"Работаем с ROZETKA уже 2 года. Всегда качественная поддержка, быстрое решение проблем и инновационные решения. Рекомендую всем!"</p>
+                        </div>
+                        <div class="review-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>8 ноября 2024</span>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-details">
+                                    <h4>Елена Смирнова</h4>
+                                    <span class="reviewer-position">Менеджер закупок</span>
+                                </div>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"Очень довольны сотрудничеством! Широкий ассортимент, конкурентные цены и отличная логистика. Доставка всегда вовремя."</p>
+                        </div>
+                        <div class="review-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>2 ноября 2024</span>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-details">
+                                    <h4>Максим Волков</h4>
+                                    <span class="reviewer-position">Предприниматель</span>
+                                </div>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"Лучший партнер для развития бизнеса! Персональный менеджер всегда на связи, гибкие условия сотрудничества."</p>
+                        </div>
+                        <div class="review-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>28 октября 2024</span>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-details">
+                                    <h4>Ольга Кравченко</h4>
+                                    <span class="reviewer-position">Руководитель отдела продаж</span>
+                                </div>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"Высокое качество товаров и сервиса. Особенно ценим оперативность в решении вопросов и профессиональные консультации."</p>
+                        </div>
+                        <div class="review-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>20 октября 2024</span>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-details">
+                                    <h4>Андрей Николаев</h4>
+                                    <span class="reviewer-position">Коммерческий директор</span>
+                                </div>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"Надежный поставщик с хорошей репутацией. Работаем без проблем, всегда можем рассчитывать на поддержку команды."</p>
+                        </div>
+                        <div class="review-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>15 октября 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-pagination">
+                    <button class="pagination-btn active" onclick="showReviewsPage(1)">1</button>
+                    <button class="pagination-btn" onclick="showReviewsPage(2)">2</button>
+                    <button class="pagination-btn" onclick="showReviewsPage(3)">3</button>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Contacts -->
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <h2>Контакты</h2>
+                <div class="contacts-content">
+                    <div class="contact-info-main">
+                        <h3>Главный офис</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Адрес:</strong><br>
+                                220004, г. Минск, пр. Независимости, 58, офис 301
+                            </div>
+                        </div>
+                        
+                        <h3>Связь с нами</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Телефоны:</strong><br>
+                                +375 (17) 123-45-67 — главный<br>
+                                +375 (17) 123-45-68 — поддержка<br>
+                                +375 (17) 123-45-69 — заказы
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong><br>
+                                info@razetka.by — общие вопросы<br>
+                                support@razetka.by — техподдержка
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Режим работы:</strong><br>
+                                Телефонная поддержка: круглосуточно<br>
+                                Офис: Пн-Пт 9:00-18:00, Сб 10:00-16:00
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="company-details">
+                        <h3>Реквизиты</h3>
+                        <p>
+                            <strong>ООО "Розетка Беларусь"</strong><br>
+                            УНП: 123456789<br>
+                            Юридический адрес: 220004, г. Минск, пр. Независимости, 58
+                        </p>
+                        
+                        <h3>Лицензии</h3>
+                        <p>
+                            Лицензия на осуществление деятельности по продаже товаров<br>
+                            № 02310/4567 от 15.03.2024<br>
+                            Выдана: Министерством антимонопольного регулирования и торговли РБ
+                        </p>
+                        
+                        <h3>Банковские реквизиты</h3>
+                        <p>
+                            Банк: ОАО "БПС-Сбербанк"<br>
+                            Расчетный счет: BY12BPSB30120000012345678900<br>
+                            БИК: BPSBBY2X
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/images/rozetka-logo.jpg" alt="ROZETKA">
+                        <span>ROZETKA</span>
+                    </div>
+                    <p>Интернет-магазин товаров для дома и семьи в Беларуси. Широкий ассортимент, выгодные цены, быстрая доставка.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram" data-disabled="true">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Facebook" data-disabled="true">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" aria-label="Telegram" data-disabled="true">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube" data-disabled="true">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Покупателям</h3>
+                    <ul>
+                        <li><a href="#" data-disabled="true">Как сделать заказ</a></li>
+                        <li><a href="#" data-disabled="true">Способы оплаты</a></li>
+                        <li><a href="#" data-disabled="true">Доставка и самовывоз</a></li>
+                        <li><a href="#" data-disabled="true">Возврат и обмен</a></li>
+                        <li><a href="#" data-disabled="true">Гарантия</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Сервисы</h3>
+                    <ul>
+                        <li><a href="#" data-disabled="true">Рассрочка</a></li>
+                        <li><a href="#" data-disabled="true">Кредит</a></li>
+                        <li><a href="#" data-disabled="true">Бонусная программа</a></li>
+                        <li><a href="#" data-disabled="true">Подарочные сертификаты</a></li>
+                        <li><a href="#" data-disabled="true">Страхование</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+375 (17) 123-45-67</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@razetka.by</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>пр. Независимости, 58, Минск</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Круглосуточно</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>© 2024 ROZETKA. Все права защищены.</p>
+                    <p class="company-info">
+                        ООО "Розетка Беларусь", УНП: 123456789
+                        <br>Лицензия на осуществление деятельности по продаже товаров № 02310/4567 от 15.03.2024
+                        <br>Юридический адрес: 220004, г. Минск, пр. Независимости, 58
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" data-disabled="true">Пользовательское соглашение</a>
+                    <a href="#" data-disabled="true">Политика конфиденциальности</a>
+                    <a href="#" data-disabled="true">Публичный договор</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/global.js"></script>
+    <script src="../assets/js/home.js"></script>
+</body>
+</html>
